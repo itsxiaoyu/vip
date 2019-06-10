@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1218318_7qnevmorr39.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="city">
+                <a href="#">南昌市</a>
+                <div class="arrow"></div>
+                <div class="city_show">
+                    <div class="close"></div>
+                    <p>请选择你所在的收货地区</p>
+                    <div class="city_tab">
+                        <ul  id="p" class="p_tab">
+                            <li><a href="#">北京市</a></li>
+                            <li><a href="#">天津市</a></li>
+                            <li><a href="#">河北省</a></li>
+                            <li><a href="#">山西省</a></li>
+                            <li><a href="#">内蒙古</a></li>
+                            <li><a href="#">辽宁省</a></li>
+                            <li><a href="#">吉林省</a></li>
+                            <li><a href="#">黑龙江</a></li>
+                            <li><a href="#">上海市</a></li>
+                            <li><a href="#">江苏省</a></li>
+                            <li><a href="#">浙江省</a></li>
+                            <li><a href="#">安徽省</a></li>
+                            <li><a href="#">福建省</a></li>
+                            <li><a href="#">江西省</a></li>
+                            <li><a href="#">山东省</a></li>
+                            <li><a href="#">河南省</a></li>
+                            <li><a href="#">湖北省</a></li>
+                            <li><a href="#">湖南省</a></li>
+                            <li><a href="#">广东省</a></li>
+                            <li><a href="#">广西</a></li>
+                            <li><a href="#">海南省</a></li>
+                            <li><a href="#">重庆市</a></li>
+                            <li><a href="#">四川省</a></li>
+                            <li><a href="#">贵州省</a></li>
+                            <li><a href="#">云南省</a></li>
+                            <li><a href="#">西藏</a></li>
+                            <li><a href="#">陕西省</a></li>
+                            <li><a href="#">甘肃省</a></li>
+                            <li><a href="#">青海省</a></li>
+                            <li><a href="#">宁夏</a></li>
+                            <li><a href="#">新疆</a></li>
+                        </ul>
+                        <a class="btn_tab tbtn1" href="#p">省份</a>
+                        <ul id="c" class="c_tab">
+                            <li><a href="#">南昌市</a></li>
+                            <li><a href="#">景德镇市</a></li>
+                            <li><a href="#">萍乡市</a></li>
+                            <li><a href="#">九江市</a></li>
+                            <li><a href="#">新余市</a></li>
+                            <li><a href="#">鹰潭市</a></li>
+                            <li><a href="#">赣州市</a></li>
+                            <li><a href="#">吉安市</a></li>
+                            <li><a href="#">宜春市</a></li>
+                            <li><a href="#">抚州市</a></li>
+                            <li><a href="#">上饶市</a></li>
+                        </ul>
+                        <a class="btn_tab tbtn2" href="#c">城市</a>
+                    </div>
+                </div>
+            </div> 
+            <ul class="top_nav">
+                <li class="login">
+                    <a href="login.html" target="_blank">请登录</a>
+                    <div class="login_show">
+                        <div class="login_logo">
+                            <img src="" alt="">
+                            <div class="welcome">
+                                <a href="login.html" target="_blank">您好！[请登录]</a>
+                            </div>
+                        </div>
+                        <dl class="login_info">
+                            <dd><a href="#">我的收藏</a></dd>
+                            <dd><a href="#">我的订单</a></dd>
+                            <dd><a href="#">零钱</a></dd>
+                            <dd><a href="#">我的优惠券</a></dd>
+                            <dd><a href="#">我的唯品币</a></dd>
+                            <dd><a href="#">唯品金融</a></dd>
+                        </dl>
+                    </div>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">注册</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">签到有礼</a>
+                    <span></span>
+                </li>
+                <li>  <a href="">我的订单</a><span></span></li>
+                <li>  
+                    <a href="">我的特卖
+                        <div class="arrow nav_arrow"></div>
+                    </a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">会员俱乐部
+                        <div class="arrow nav_arrow"></div>
+                    </a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">客户服务
+                        <div class="arrow nav_arrow"></div>
+                    </a>
+                    <span></span>
+                </li>
+                <li><a href="">手机版</a><span></span></li>
+                <li>
+                    <a href="">更多
+                        <div class="arrow nav_arrow"></div>
+                    </a>
+                </li>
+            </ul>
+            <div class="top_search">
+                <div class="top_logo">
+                    <img src="images/commonHeader.png" alt="" width="140px" height="100px">
+                    <div class="server"></div>
+                </div>
+                <div class="top_right">
+                    <div class="cart_bag"> 
+                        <a href="">购物袋</a>
+                        <div class="cart_show">
+                            <span></span>
+                            <p>好像还未登陆！<a href="login.html" target="_blank" style="display: inline-block;
+                                width: auto;
+                                color: #f10180;">马上登陆</a> 查看购物袋吧！</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="onav">
+            <div class="wrap">
+                <ul>
+                    <li><a href="">我的唯品会</a></li>
+                    <li><a href="">安全中心</a></li>
+                    <li><a href="">预告</a></li>
+                    <li><a href="">分类</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="osection">
+        <div class="owrap">
+            <div class="oleft">
+                <div class="oleft_box">
+                    <dl class="side_btm">
+                        <dt>
+                            <i></i>
+                            <a href="">我的交易</a>
+                        </dt>
+                        <dd><a href="" style="color: #f10180;">订单管理</a></dd>
+                        <dd><a href="">退换/售后</a></dd>
+                        <dd><a href="">收货地址</a></dd>
+                    </dl>
+                    <dl class="side_btm">
+                        <dt>
+                            <i></i>
+                            <a href="">我的资产</a>
+                        </dt>
+                        <dd><a href="">零钱</a></dd>
+                        <dd><a href="">唯品金融</a></dd>
+                        <dd><a href="">银行卡</a></dd>
+                        <dd><a href="">联名卡</a></dd>
+                        <dd><a href="">唯品卡</a></dd>
+                        <dd><a href="">优惠卷</a></dd>
+                        <dd><a href="">唯品币</a></dd>
+                    </dl>
+                    <dl class="side_btm">
+                        <dt>
+                            <i></i>
+                            <a href="">我的账户</a>
+                        </dt>
+                        <dd><a href="">我的资料</a></dd>
+                        <dd><a href="">分享账号</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="oright">
+                <p class="otitle">
+                    <a href="">我的唯品会</a>&nbsp;>&nbsp;订单管理
+                </p>
+                <div class="odeclare">
+                    <i></i>
+                    <b>
+                        安全提醒：唯品会不会以任何理由要求您提供银行卡信息或支付额外费用，请谨防钓鱼链接或诈骗电话。<br>
+                        *为保障您的信息安全，订单信息中的联系电话已被加密隐藏。
+                    </b>
+                </div>
+                <div class="ocontainer">
+                    <ul class="ohd">
+                        <li><a href="" style="font-weight: 700;color:#333;"><p>普通订单</p></a></li>
+                        <li><a href=""><p>预付订单</p></a></li>
+                        <li><a href=""><p>旅行订单</p></a></li>
+                        <li><a href=""><p>电子卡卷订单</p></a></li>
+                        <li><a href=""><p>唯品会兑换订单</p></a></li>
+                    </ul>
+                    <div class="obd">
+                        <table class="otable">
+                            <thead>
+                                <tr>
+                                    <th>商品</th>
+                                    <th>订单总额</th>
+                                    <th class="all_state">
+                                        <a href="">
+                                            全部订单状态
+                                            <i class="iconfont icongengduo1"></i>
+                                        </a>  
+                                        <ul class="state_show">
+                                        <li><a href="">全部订单状态</a></li>
+                                        <li><a href="">待处理</a></li>
+                                        <li><a href="">代发货</a></li>
+                                        <li><a href="">已发货</a></li>
+                                        <li><a href="">已收货</a></li>
+                                        <li><a href="">已取消</a></li>
+                                        </ul>
+                                    </th>
+                                    </div>
+                                    <th>操作</th>
+                                    <th>其他操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td colspan="5" style="height: 10px;background: none;"></td></tr>
+                                <tr class="tbody_hd">
+                                    <td colspan="5">
+                                        <i></i>
+                                        <span>订单号：18023478688987</span>
+                                        <span>唯品会自营</span>
+                                        <span>2019-05-19 20:21:39</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ogoods">
+                                        <a href="">
+                                            <img src="images/item1.jpg" alt="" width="50px" height="63px">
+                                        </a>
+                                        <div class="ogoods_info">
+                                            <a href="">新款时尚连衣裙夏爆款</a>
+                                            <span>均码</span>
+                                        </div>
+                                    </td>
+                                    <td class="oprice">
+                                        <p><strong>&yen;109.00</strong></p>
+                                        <p>在线</p>
+                                    </td>
+                                    <td class="ostate">
+                                        <p><span style="color: gray;">已完成</span></p>
+                                        <p>订单详情</p>
+                                    </td>
+                                    <td class="ocontrol">
+                                        <p><a href="">填写口碑</a></p>
+                                        <p><a class="buyagain" href="">再次购买</a></p>
+                                    </td>
+                                    <td class="odelete">
+                                        <p><a href="">删除订单</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ogoods">
+                                        <a href="">
+                                            <img src="images/item2.jpg" alt="" width="50px" height="63px">
+                                        </a>
+                                        <div class="ogoods_info">
+                                            <a href="">新款时尚连衣裙夏爆款</a>
+                                            <span>均码</span>
+                                        </div>
+                                    </td>
+                                    <td class="oprice">
+                                        <p><strong>&yen;109.00</strong></p>
+                                        <p>在线</p>
+                                    </td>
+                                    <td class="ostate">
+                                        <p><span style="color: gray;">已完成</span></p>
+                                        <p>订单详情</p>
+                                    </td>
+                                    <td class="ocontrol">
+                                        <p><a href="">填写口碑</a></p>
+                                        <p><a class="buyagain" href="">再次购买</a></p>
+                                    </td>
+                                    <td class="odelete">
+                                        <p><a href="">删除订单</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="opagging"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="wrap">
+        <div class="footer_inner">
+            <ul>
+                <li><i class="f1"></i></li>
+                <li><i class="f2"></i></li>
+                <li><i class="f3"></i></li>
+                <li><i class="f4"></i></li>
+                <li><i class="f5"></i></li>
+                <li><i class="f6"></i></li>
+                <li><i class="f7"></i></li>
+                <li><i class="f8"></i></li>
+                <li><i class="f9"></i></li>
+                <li><i class="f10"></i></li>
+            </ul>
+            <div class="footer_list">
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">7天无理由放心退</a></dd>
+                    <dd><a href="">退货返10元唯品币</a></dd>
+                    <dd><a href="">7x15小时客务服务</a></dd>
+                    <dd><a href="">7天无理由随心换</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">7天无理由放心退</a></dd>
+                    <dd><a href="">退货返10元唯品币</a></dd>
+                    <dd><a href="">7x15小时客务服务</a></dd>
+                    <dd><a href="">7天无理由随心换</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">7天无理由放心退</a></dd>
+                    <dd><a href="">退货返10元唯品币</a></dd>
+                    <dd><a href="">7x15小时客务服务</a></dd>
+                    <dd><a href="">7天无理由随心换</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">7天无理由放心退</a></dd>
+                    <dd><a href="">退货返10元唯品币</a></dd>
+                    <dd><a href="">7x15小时客务服务</a></dd>
+                    <dd><a href="">7天无理由随心换</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">7天无理由放心退</a></dd>
+                    <dd><a href="">退货返10元唯品币</a></dd>
+                    <dd><a href="">7x15小时客务服务</a></dd>
+                    <dd><a href="">7天无理由随心换</a></dd>
+                </dl>
+                <dl>
+                    <dt>唯品会APP二维码</dt>
+                    <dd><img src="images/page_bottom_dl_n.png" alt=""></dd>
+                    <dd>下载唯品会移动APP</dd>
+                </dl>
+            </div>
+            <div class="footer_info">
+                <p>
+                    <a href="">关于我们</a>|
+                    <a href="">About us</a>|
+                    <a href="">Investor Relations</a>|
+                    <a href="">媒体报道</a>|
+                    <a href="">品牌招商</a>|
+                    <a href="">隐私条款</a>|
+                    <a href="">唯品诚聘</a>|
+                    <a href="">唯品卡</a>|
+                    <a href="">联系我们</a>
+                </p>
+                <p>
+                    Copyright © 2008-2019 vip.com，All Rights Reserved&nbsp;&nbsp;使用本网站即表示接受
+                    <a href="">唯品会用户协议</a>。版权所有
+                    <a rel="nofollow" href="//www.vip.com/">广州唯品会电子商务有限公司</a>
+                    <br>
+                    <a href="" target="_blank">
+                        <img src="images/police_icon.png" width="14" height="14" style="margin:2px 3px 0 0;">粤公网安备
+                        44010302111111号
+                    </a>&nbsp;&nbsp;
+                    <a href="">粤ICP备08114786号</a>
+                    <a href="">增值业务经营许可证：粤B2-20170777 </a>
+                    <a href="h">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+                    <br>
+                    <a href="">自营主体经营证照</a>&nbsp;&nbsp;
+                    <a href="">风险监测信息</a>&nbsp;&nbsp;
+                    <a href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+                    <a href=""> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+                    <a href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -34,14 +34,14 @@
                             </div>
                         </div>
                         <div class="tab2" id="tab2">
-                            <form action="">
+                            <form action="checked.php" method="GET">
                                 <div class="user">
                                     <span></span>
-                                    <input type="text" placeholder="手机号、用户名、邮箱">
+                                    <input type="text" placeholder="手机号、用户名、邮箱" id="name"name="username">
                                 </div>
                                 <div class="password">
                                     <span></span>
-                                    <input type="text" placeholder="密码">
+                                    <input type="password" placeholder="密码" id="pwd" name="password">
                                 </div>
                                 <div class="check">
                                     <div class="lcheck">
@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="rcheck">忘记密码</div>
                                 </div>
-                                <button>登录</button>
+                                <button class="btn">登录</button>
                             </form>
                             
                         </div>
@@ -84,5 +84,24 @@
     <footer>
         <p>Copyright 2008-2019 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
     </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+    $(function () {
+	    $(".btn").click(function() {
+			$.ajax({
+				url:"checked.php",
+				data:{username:$("#name").val(),password:$("#pwd").val()},
+				success:function(result){
+					if(result == 'success'){
+						window.location.href="index.html";
+					}else if (result == 'falied') {		
+						alert("密码错误");
+					}
+				}
+			});
+	    });
+    });
+
+    </script>
 </body>
 </html>

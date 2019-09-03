@@ -7,7 +7,7 @@
     <title>购物车</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1218318_6581venyprq.css">
-    <script src="js/index.js"></script>
+   
 </head>
 <body>
     <div class="cart_header">
@@ -86,13 +86,13 @@
                                </td>
                                <td class="number_item">
                                     <div class="num_box">
-                                        <a  class="amount-trigger min" href="">
+                                        <a  class="amount-trigger min" href="javascript:;">
                                            <i class="iconfont iconjiajian-"></i>
                                         </a>
                                         <div class="amount_num">
-                                            <input type="text" value="1">
+                                            <input id="input" type="text" value="0">
                                         </div>
-                                        <a  class="amount-trigger max" href="">
+                                        <a  class="amount-trigger max" href="javascript:;">
                                             <i class="iconfont iconoff"></i>
                                         </a>
                                     </div>
@@ -101,86 +101,78 @@
                                    <p>&yen;447.3</p>
                                </td>
                                <td class="action_item">
-                                   <p>删除</p>
+                                <p><a href="javascript:;">删除</a></p>
                                </td>
                            </tr>
+                           <tr>
+                            <td class="product_item">
+                                <div class="pi_img">
+                                    <img src="images/item2.jpg" alt="" width="58px" height="74px">
+                                </div>
+                                <h3><span class="saletype">自营</span><a href="">2019春装新款纯色OL风翻领百褶不规则简约西装外套</a></h3>
+                                <p>尺码:M</p>
+                            </td>
+                            <td class="price_item">
+                                <p>
+                                    <strong> &yen;72.3</strong>
+                                </p>
+                                <del>&yen;89</del>
+                            </td>
+                            <td class="number_item">
+                                <div class="num_box">
+                                    <a class="amount-trigger min" href="javascript:;">
+                                        <i class="iconfont iconjiajian-"></i>
+                                    </a>
+                                    <div class="amount_num">
+                                        <input id="input" type="text" value="1">
+                                    </div>
+                                    <a class="amount-trigger max" href="javascript:;">
+                                        <i class="iconfont iconoff"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="subtotal_item">
+                                <p>&yen;72.3</p>
+                            </td>
+                            <td class="action_item">
+                                <p><a href="javascript:;">删除</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_item">
+                                <div class="pi_img">
+                                    <img src="images/item3.jpg" alt="" width="58px" height="74px">
+                                </div>
+                                <h3><span class="saletype">自营</span><a href="">2019春装新款纯色OL风翻领百褶不规则简约西装外套</a></h3>
+                                <p>尺码:M</p>
+                            </td>
+                            <td class="price_item">
+                                <p>
+                                    <strong> &yen;67.9</strong>
+                                </p>
+                                <del>&yen;112</del>
+                            </td>
+                            <td class="number_item">
+                                <div class="num_box">
+                                    <a class="amount-trigger min" href="javascript:;">
+                                        <i class="iconfont iconjiajian-"></i>
+                                    </a>
+                                    <div class="amount_num">
+                                        <input id="input" type="text" value="1">
+                                    </div>
+                                    <a class="amount-trigger max" href="javascript:;">
+                                        <i class="iconfont iconoff"></i>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="subtotal_item">
+                                <p>&yen;67.9</p>
+                            </td>
+                            <td class="action_item">
+                                <p><a href="javascript:;">删除</a></p>
+                            </td>
+                        </tr>
                        </tbody> 
-                    </table>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="product_item">
-                                    <div class="pi_img">
-                                        <img src="images/item2.jpg" alt="" width="58px" height="74px">
-                                    </div>
-                                    <h3><span class="saletype">自营</span><a href="">2019春装新款纯色OL风翻领百褶不规则简约西装外套</a></h3>
-                                    <p>尺码:M</p>
-                                </td>
-                                <td class="price_item">
-                                    <p>
-                                        <strong> &yen;72.3</strong>
-                                    </p>
-                                    <del>&yen;89</del>
-                                </td>
-                                <td class="number_item">
-                                    <div class="num_box">
-                                        <a class="amount-trigger min" href="">
-                                            <i class="iconfont iconjiajian-"></i>
-                                        </a>
-                                        <div class="amount_num">
-                                            <input type="text" value="1">
-                                        </div>
-                                        <a class="amount-trigger max" href="">
-                                            <i class="iconfont iconoff"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="subtotal_item">
-                                    <p>&yen;72.3</p>
-                                </td>
-                                <td class="action_item">
-                                    <p>删除</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="product_item">
-                                    <div class="pi_img">
-                                        <img src="images/item3.jpg" alt="" width="58px" height="74px">
-                                    </div>
-                                    <h3><span class="saletype">自营</span><a href="">2019春装新款纯色OL风翻领百褶不规则简约西装外套</a></h3>
-                                    <p>尺码:M</p>
-                                </td>
-                                <td class="price_item">
-                                    <p>
-                                        <strong> &yen;67.9</strong>
-                                    </p>
-                                    <del>&yen;112</del>
-                                </td>
-                                <td class="number_item">
-                                    <div class="num_box">
-                                        <a class="amount-trigger min" href="">
-                                            <i class="iconfont iconjiajian-"></i>
-                                        </a>
-                                        <div class="amount_num">
-                                            <input type="text" value="1">
-                                        </div>
-                                        <a class="amount-trigger max" href="">
-                                            <i class="iconfont iconoff"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="subtotal_item">
-                                    <p>&yen;67.9</p>
-                                </td>
-                                <td class="action_item">
-                                    <p>删除</p>
-                                </td>
-                            </tr>
-                        </tbody>
                     </table>
                 </div>
                 <div class="cart_footer">
@@ -200,7 +192,7 @@
                 </div>
                 <div class="payment_right">
                     <p>共<span>2</span>件商品 商品金额<small>&yen;546.3</small></p>
-                    <p>总金额(未含运费)<a href="">&yen;546.3</a></p>
+                    <p>总金额(未含运费)<a href="">&yen;0</a></p>
                 </div>
             </div>
             <div class="payment_bottom">
@@ -378,5 +370,7 @@
             <span class="online">在线客服</span>
         </div>  
     </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>

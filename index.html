@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1218318_7qnevmorr39.css">
-    <script src="js/index.js"></script>
+    <style>
+       #ui-id-1{
+            border:none !important;
+            width: 100px !important;
+            top:130px !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -132,7 +140,7 @@
                 </div>
                 <div class="top_right">
                     <div class="search_input">
-                        <input type="text" placeholder="连衣裙">
+                        <input  id="input" type="text" placeholder="连衣裙">
                         <div class="input_show">
                             <div class="linput">
                                 <div class="history">搜索历史</div>
@@ -325,79 +333,7 @@
                                             <a id="showa" href="#">皮衣/皮草</a>
                                             <a id="showa" href="#">套装</a>
                                         </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>人气美衣</dt>
-                                        <dd>
-                                            <a id="showa" href="#">T恤</a>
-                                            <a id="showa" href="#">衬衫</a>
-                                            <a id="showa" href="#">连衣裙</a>
-                                            <a id="showa" href="#">外套</a>
-                                            <a id="showa" href="#">短外套</a>
-                                            <a id="showa" href="#">卫衣</a>
-                                            <a id="showa" href="#">防晒衣</a>
-                                            <a id="showa" href="#">雪纺衫</a>
-                                            <a id="showa" href="#">针织衫</a>
-                                            <a id="showa" href="#">小西装</a>
-                                            <a id="showa" href="#">风衣</a>
-                                            <a id="showa" href="#">马甲</a>
-                                            <a id="showa" href="#">羽绒</a>
-                                            <a id="showa" href="#">棉衣</a>
-                                            <a id="showa" href="#">毛衣</a>
-                                            <a id="showa" href="#">大衣</a>
-                                            <a id="showa" href="#">羊绒/羊毛衫</a>
-                                            <a id="showa" href="#">皮衣/皮草</a>
-                                            <a id="showa" href="#">套装</a>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>人气美衣</dt>
-                                        <dd>
-                                            <a id="showa" href="#">T恤</a>
-                                            <a id="showa" href="#">衬衫</a>
-                                            <a id="showa" href="#">连衣裙</a>
-                                            <a id="showa" href="#">外套</a>
-                                            <a id="showa" href="#">短外套</a>
-                                            <a id="showa" href="#">卫衣</a>
-                                            <a id="showa" href="#">防晒衣</a>
-                                            <a id="showa" href="#">雪纺衫</a>
-                                            <a id="showa" href="#">针织衫</a>
-                                            <a id="showa" href="#">小西装</a>
-                                            <a id="showa" href="#">风衣</a>
-                                            <a id="showa" href="#">马甲</a>
-                                            <a id="showa" href="#">羽绒</a>
-                                            <a id="showa" href="#">棉衣</a>
-                                            <a id="showa" href="#">毛衣</a>
-                                            <a id="showa" href="#">大衣</a>
-                                            <a id="showa" href="#">羊绒/羊毛衫</a>
-                                            <a id="showa" href="#">皮衣/皮草</a>
-                                            <a id="showa" href="#">套装</a>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dt>人气美衣</dt>
-                                        <dd>
-                                            <a id="showa" href="#">T恤</a>
-                                            <a id="showa" href="#">衬衫</a>
-                                            <a id="showa" href="#">连衣裙</a>
-                                            <a id="showa" href="#">外套</a>
-                                            <a id="showa" href="#">短外套</a>
-                                            <a id="showa" href="#">卫衣</a>
-                                            <a id="showa" href="#">防晒衣</a>
-                                            <a id="showa" href="#">雪纺衫</a>
-                                            <a id="showa" href="#">针织衫</a>
-                                            <a id="showa" href="#">小西装</a>
-                                            <a id="showa" href="#">风衣</a>
-                                            <a id="showa" href="#">马甲</a>
-                                            <a id="showa" href="#">羽绒</a>
-                                            <a id="showa" href="#">棉衣</a>
-                                            <a id="showa" href="#">毛衣</a>
-                                            <a id="showa" href="#">大衣</a>
-                                            <a id="showa" href="#">羊绒/羊毛衫</a>
-                                            <a id="showa" href="#">皮衣/皮草</a>
-                                            <a id="showa" href="#">套装</a>
-                                        </dd>
-                                    </dl>
+                                    </dl>      
                                 </div>
                                 <div class="rshow"></div>
                             </div>
@@ -707,6 +643,18 @@
         </div>
     </header>
     <div class="bg">
+        <div class="carousel" data-ride="carousel" data-interval="2000" data-pause="none">
+            <div class="carousel-inner">
+                <div class="item active"><img src="images/bg.jpg" alt=""></div>
+                <div class="item"><img src="images/bg2.jpg" alt=""></div>
+                <div class="item"><img src="images/bg3.jpg" alt=""></div>
+            </div>
+            <ul class="carousel-indicators">
+                <li data-slide-to="0" data-target="#abc"></li>
+                <li data-slide-to="1" data-target="#abc"></li>
+                <li data-slide-to="2" data-target="#abc"></li>
+            </ul>
+        </div>
     </div>
     <section class="wrap">
         <div class="section1">
@@ -1348,5 +1296,15 @@
             </div>
         </div>
     </div>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        var arr=["连衣裙 女","夏连衣裙","夏上衣","上衣女","半身裙女","半生裙夏"];
+		$("#input").autocomplete({
+			source:arr
+		})
+    </script>
 </body>
 </html>
